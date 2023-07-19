@@ -11,7 +11,7 @@ export const environment = {
     storageBucket: "mercadolistoya.appspot.com",
     messagingSenderId: "33627212994",
     appId: "1:33627212994:web:c8a07698a64921134ebf5b",
-    measurementId: "G-9B0J1MNPWN"
+  
   }
 };
 
