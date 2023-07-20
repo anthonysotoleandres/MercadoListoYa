@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +13,7 @@ export class LoginPage {
 
   password: string = '';  
   
-  constructor(private afAuth: AngularFireAuth) { }
+  constructor(private afAuth: AngularFireAuth, private navCtrl: NavController) { }
 
   loginWithEmail() {
     this.afAuth.signInWithEmailAndPassword(this.email, this.password)
@@ -40,5 +40,12 @@ export class LoginPage {
         console.error(error);
       });
   }
+
+    // Función para manejar el evento de registro
+    register() {
+      // Aquí puedes agregar la lógica para redirigir al usuario a la página de registro
+      // Por ejemplo, puedes utilizar el NavController para navegar a otra página de tu aplicación
+      this.navCtrl.navigateForward('/registro'); // Reemplaza '/registro' con la ruta de tu página de registro
+    }
   
 }
