@@ -11,13 +11,15 @@ import { LoginPage } from './login.page';
 ////////////////////////////////
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     LoginPageRoutingModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    
   ],
   declarations: [LoginPage]
 })
