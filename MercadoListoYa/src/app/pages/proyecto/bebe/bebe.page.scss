@@ -1,0 +1,44 @@
+/* carnes.page.scss */
+
+/* Estilos para el botón Añadir */
+.add-button {
+    border: 2px solid rgb(19, 121, 19); /* Borde de 2px de ancho y color verde */
+    background-color: transparent; /* Fondo transparente */
+    color: rgb(19, 121, 19); /* Color verde para el texto */
+    font-size: 16px;
+
+    padding: 8px 16px; /* Añadir relleno al botón para mejorar la apariencia */
+    margin-top: 8px; /* Añadir un margen superior para separar los botones */
+    border-radius: 20px; /* Agregar bordes redondos al botón */
+    transition: background-color 0.3s, color 0.3s; /* Agregar transiciones para suavizar los cambios */
+ 
+  }
+  
+  .add-button:hover {
+    background-color: rgb(19, 121, 19); /* Cambiar el fondo a verde cuando el botón está en hover */
+    color: white; /* Cambiar el color del texto a blanco cuando el botón está en hover */
+  }
+
+/* Ajustar el ancho de las tarjetas */
+/* carnes.page.scss */
+
+/* Ajustar el ancho de las tarjetas y el margen */
+ion-card {
+    width: 150px; /* Ajusta el ancho de las tarjetas según tus preferencias */
+    margin: 0 5px; /* Agrega un margen horizontal para separar las tarjetas */
+  }
+  
+  /* Estilos adicionales para el swiper-container */
+
+  /* Ajustar el tamaño del swiper-container */
+  swiper {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Centrar las tarjetas dentro de cada swiper-slide */
+  swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  

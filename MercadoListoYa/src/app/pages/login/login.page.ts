@@ -19,11 +19,14 @@ export class LoginPage {
     this.afAuth.signInWithEmailAndPassword(this.email, this.password)
       .then(() => {
         // Inicio de sesión exitoso
+        this.navCtrl.navigateForward('/dashboard');
       })
       .catch(error => {
         // Error en el inicio de sesión
         console.error(error);
       });
+     
+
   }
   
   loginWithGoogle() {
@@ -34,6 +37,7 @@ export class LoginPage {
         // Inicio de sesión con Google exitoso
         // Aquí puedes acceder a la información del usuario logueado si lo necesitas
         // const user = result.user;
+        this.navCtrl.navigateForward('/dashboard');
       })
       .catch((error) => {
         // Error en el inicio de sesión con Google
